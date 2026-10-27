@@ -1,0 +1,35 @@
+{
+  "name": "prisma-safe-ai-query",
+  "version": "1.0.6",
+  "description": "An end-to-end AI ORM: securely translates natural language into Prisma queries using Google Gemini and Zod.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test tests/engine.test.js"
+  },
+  "keywords": [
+    "prisma",
+    "ai",
+    "llm",
+    "gemini",
+    "zod",
+    "security",
+    "orm",
+    "dynamic-routing"
+  ],
+  "author": "Olugbenga Taiwo",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1.45.0"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=5.0.0",
+    "zod": "^3.22.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "@types/node": "^22.20.1"
+  }
+}
