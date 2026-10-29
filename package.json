@@ -4,6 +4,11 @@
   "description": "An end-to-end AI ORM: securely translates natural language into Prisma queries using Google Gemini and Zod.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
@@ -17,7 +22,7 @@
     "zod",
     "security",
     "orm",
-    "dynamic-routing"
+    "multi-level-query"
   ],
   "author": "Olugbenga Taiwo",
   "license": "MIT",
